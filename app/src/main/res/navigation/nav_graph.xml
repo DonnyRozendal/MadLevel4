@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bucketListFragment">
+
+    <fragment
+        android:id="@+id/bucketListFragment"
+        android:name="nl.hva.madlevel4.features.presentation.bucketlist.BucketListFragment"
+        android:label="BucketListFragment"
+        tools:layout="@layout/fragment_bucket_list">
+        <action
+            android:id="@+id/action_bucketListFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="nl.hva.madlevel4.features.presentation.additem.AddItemFragment"
+        android:label="AddItemFragment"
+        tools:layout="@layout/fragment_add_item" />
+</navigation>
